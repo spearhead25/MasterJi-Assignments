@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="mood.css">
+</head>
+<body>
+    <h2>Mood Tracker</h2>
+    <div class="mood-buttons">
+        <button class="happy" onclick="saveMood('😊 Happy')">😊 Happy</button>
+        <button class="sad" onclick="saveMood('😢 Sad')">😢 Sad</button>
+        <button class="neutral" onclick="saveMood('😐 Neutral')">😐 Neutral</button>
+        <button class="excited" onclick="saveMood('🤩 Excited')">🤩 Excited</button>
+    </div>
+    <h3>Past Moods</h3>
+    <select id="filter" onchange="displayMoods()">
+        <option value="all">All</option>
+        <option value="day">Last 24 Hours</option>
+        <option value="week">Last 7 Days</option>
+        <option value="month">Last 30 Days</option>
+    </select>
+    <div class="timeline" id="mood-timeline"></div>
+    <script src="mood.js"></script>
+</body>
+</html>
