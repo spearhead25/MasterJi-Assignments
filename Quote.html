@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="Quote.css">
+</head>
+<body>
+    <div class="container" id="quote-container">
+    <p class="quote" id="quote">Loading...</p>
+    <p class="author" id="author"></p>
+    <button class="btn-primary" onclick="fetchQuote()">New Quote</button>
+    <button class="btn-secondary" onclick="copyQuote()">Copy</button>
+    <button class="btn-danger" onclick="shareOnTwitter()">Share on Twitter</button>
+    <button class="btn-warning" onclick="exportAsImage()">Export</button>
+    <script src="Quote.js"></script>
+</body>
+</html>
